@@ -116,60 +116,160 @@ a{
 }
 
 
+
+
 /* Media Queries */
 
-/* This is for Iphone x */
+
+
 
 @media only screen 
-	and (min-device-width: 375px) 
-	and (max-device-width: 812px) 
-	and (-webkit-min-device-pixel-ratio: 3) {
+	and (min-device-width: 320px) 
+	and (max-device-width: 480px) 
+	{
+
+		.container{
+			max-width: 16rem;
+
+		}
 	h1.name {
 		font-size: 2rem;
 		margin-top: 2rem;
 	}
 
 	span.email{
-		font-size: 1.5rem;
+		font-size: 1rem;
 		margin-top: 1rem;
 	}
 
+	.introme{
+		max-width: 15rem;
+		font-size: 1.3rem;
+	}
+
+	.section-title{
+		font-size: 1rem;
+	}
+
+	.footer{
+		font-size: 0.9rem;
+	}
+
 	h5.card-header{
-		font-size: 1rem;	
+		height: auto;
+		font-size: 1rem;
 	}
 }
 
-/* Laptops */
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-	and (min-device-width: 1200px) 
-	and (max-device-width: 1600px) 
-	and (-webkit-min-device-pixel-ratio: 1) { 
-		h1.name{
-			font-size: 3rem;
+
+
+@media only screen 
+	and (min-device-width: 481px) 
+	and (max-device-width: 768px) 
+	{
+
+	.container{
+			max-width: 30rem;
 		}
+	h1.name {
+		font-size: 2rem;
+	}
+
+	span.email{
+		font-size: 1.7rem;
+		margin-top: 1rem;
+	}
+
+	.introme{
+		font-size: 1.4rem;
+	}
+
+	h5.card-header{
+		font-size: 1rem;
+		height: auto;	
+	}
+
+	.section-title{
+		font-size: 1.4rem;
+	}
+
+	.img{
+		font-size: 10rem;
+	}
 }
 
-@media screen 
-	and (min-device-width: 1200px) 
-	and (max-device-width: 1600px) 
-	and (-webkit-min-device-pixel-ratio: 2)
-	and (min-resolution: 192dpi) { 
-		h1.name{
+
+
+@media only screen 
+	and (min-device-width: 769px) 
+	and (max-device-width: 1024px) 
+	and (-webkit-min-device-pixel-ratio: 2) {
+
+		.container{
+			max-width: 35rem;
+		}
+		h1.name {
 			font-size: 3rem;
 		}
-}
 
-/* ----------- Google Pixel ----------- */
+		span.email{
+			font-size: 2rem;
+		}
 
-/* @media screen 
-	and (device-width: 360px) 
-	and (device-height: 640px) 
-	and (-webkit-device-pixel-ratio: 3) {
+		.introme{
+			font-size: 1.4rem;
+		}
 
-		.card-header{
+		.section-title{
+			font-size: 1.6rem;
+		}
+
+		.footer{
 			font-size: 1rem;
 		}
 
+		h5.card-header{
+			height: auto;
+			font-size: 1rem;
+		}
+}
 
-} */
+
+@media only screen 
+	and (min-device-width: 1025px) 
+	and (max-device-width: 1200px) 
+	and (-webkit-min-device-pixel-ratio: 2) {
+
+		.container{
+			max-width: 40rem;
+		}
+
+		h1.name {
+			font-size: 3rem;
+		}
+
+		span.email{
+			font-size: 2rem;
+		}
+
+		.introme{
+			font-size: 2rem;
+		}
+
+		.section-title{
+			font-size: 1.5rem;
+		}
+
+		.footer{
+			font-size: 1rem;
+		}
+
+		h5.card-header{
+			height: auto;
+			font-size: 1rem;
+		}
+}
+
+
+
+
