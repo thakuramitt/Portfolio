@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+	font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+h5.card-header {
+	background: #98c3eb;
+	border-radius: 0.6rem;
+	margin-bottom: 1rem;
+	height: 5rem;
+}
+
+
+body {
+	line-height: 1;
+	font-family: 'Space Mono', monospace;
+	text-rendering : optimizeLegibility;
+	-webkit-font-smoothing : antialiased;
+	font-size: 19px;
+	background-color: #fafafa;
+	color: #000000;
+}
+
+
+.introme{
+
+	line-height: 3rem;
+	font-family: 'Space Mono', monospace;
+	font-size: 2rem;
+}
+
+strong {
+	font-weight: 600;
+}
+
+div , footer {
+	box-sizing: border-box;
+}
+
+
+.container {
+	max-width: 50rem;
+	height: auto;
+	margin: 0rem auto;
+}
+
+.hero {
+	margin: 2rem auto; 
+	position: relative;
+}
+
+h1.name {
+	margin-top: 6rem;
+	font-size: 3rem;
+	font-weight:bolder;
+	font-family: 'Space Mono', monospace;
+	display: inline-block;
+}
+
+
+a{
+	color:black;
+}
+
+.footer{
+	font-size: 1.3rem;
+	font-weight: bolder;
+	margin-bottom: 10rem;
+}
+
+.email {
+	display: block;
+	font-size: 2rem;
+	font-family: 'Space Mono', monospace; 
+	color: #181717;
+	margin-top: 1.5rem;
+}
+
+.home, .resume{
+	font-weight: bolder;
+	margin-top: 1.5rem;
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+
+.section-title {
+	text-decoration: underline;
+	font-size: 2rem;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+.download{
+	font-weight: bolder;
+	margin-bottom: 10rem;
+	margin-top: 1.5rem;
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+
+/* Media Queries */
+
+/* This is for Iphone x */
+
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-width: 812px) 
+	and (-webkit-min-device-pixel-ratio: 3) {
+	h1.name {
+		font-size: 2rem;
+		margin-top: 2rem;
+	}
+
+	span.email{
+		font-size: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	h5.card-header{
+		font-size: 1rem;	
+	}
+}
+
+/* Laptops */
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+	and (min-device-width: 1200px) 
+	and (max-device-width: 1600px) 
+	and (-webkit-min-device-pixel-ratio: 1) { 
+		h1.name{
+			font-size: 3rem;
+		}
+}
+
+@media screen 
+	and (min-device-width: 1200px) 
+	and (max-device-width: 1600px) 
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (min-resolution: 192dpi) { 
+		h1.name{
+			font-size: 3rem;
+		}
+}
+
+/* ----------- Google Pixel ----------- */
+
+/* @media screen 
+	and (device-width: 360px) 
+	and (device-height: 640px) 
+	and (-webkit-device-pixel-ratio: 3) {
+
+		.card-header{
+			font-size: 1rem;
+		}
+
+
+} */
